@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Import Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Car Import Calculation</h2>
+        <form id="alg.php">
+            <div class="form-group">
+                <label for="price">Price of Car:</label>
+                <input type="number" id="price" name="price" step="500" required>
+            </div>
+            <div class="form-group">
+                <label for="date">First Registration:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="carType">Type of Car:</label>
+                <select id="carType" name="carType">
+                    <option value="trades_car">Trades Car</option>
+                    <option value="passenger_car">Passenger Car</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="engineSize">Engine Size:</label>
+                <select id="engineSize" name="engineSize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fuelType">Fuel Type:</label>
+                <select id="fuelType" name="fuelType">
+                    <option value="gasoline">Gasoline</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="electric">Electric</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="hydrogen">Hydrogen</option>
+                    <option value="ethanol">Ethanol</option>
+                </select>
+            </div>
+            <button type="submit">Calculate Dogana Price</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

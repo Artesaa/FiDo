@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Flask Backend",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/your_flask_script.py",
+            "args": [],
+            "env": {
+                "FLASK_APP": "${workspaceFolder}/your_flask_script.py",
+                "FLASK_ENV": "development"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}
